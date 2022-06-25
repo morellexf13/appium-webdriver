@@ -10,7 +10,7 @@
   </h1>
   <sup>
     <br />
- Appium Selenium Webdriver Starter Boilerplate for NodeJS with AWS Devicefarm insights, test your mobile apps with ease!</em>
+ Appium Selenium Webdriver Starter Boilerplate for NodeJS with Mocha & AWS Devicefarm insights. Test your mobile apps with ease!</em>
     <br />
     <br /
 
@@ -76,7 +76,7 @@ Always try to set accessibility ids! 🫡
 
 Install it locally and run in easy steps
 
-```json
+```
 1- Start Appium Desktop Server
 2- cd appium-webdriver
 3- npm install
@@ -99,7 +99,7 @@ Select the Appium Node.js option.
 Upload your zipped test package and go to the next step.
 <img alt='Devicefarm Step 4' src="./screenshots/devicefarm/4.png" />
 
-This is important, you need to setup the test spec yml file. On this one, create a new one and use this template:
+This is important, you need to setup the test spec yml file. Create a new one and use this template:
 
 ```yml
 version: 0.1
