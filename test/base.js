@@ -10,7 +10,7 @@ const capabilities = {
   platformName: "Android",
   platformVersion: "12",
   deviceName: "Android Emulator",
-  app: "/Users/YOUR USER/Downloads/YOUR.apk", // path to the app
+  app: "/Users/YOUR USER/Documents/GitHub/appium-webdriver/resources/debug.apk", // path to the app
   automationName: "UiAutomator2", // Name of automation driver, essential parameter for webdriverio locators to work.
 }
 const DEFAULT_TIME_TO_WAIT_MS = 500;

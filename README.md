@@ -83,20 +83,98 @@ Install it locally and run in easy steps
 4- npm test
 ```
 
+<img alt='NPM Test' src="./screenshots/npm-test.png" />
+
+## 📊 Run tests with allure reports
+
+Pre-requisites:
+```
+brew install allure
+```
+Generate & Open
+```
+npm run test-output-allure
+```
+
+<img alt='Allure Report' src="./screenshots/allure-report.png" />
+
+## 👨🏼‍🎨 Run tests and output JSON
+```
+npm run test-output-json
+```
+
+```json
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2022-06-24T12:46:05.856Z",
+    "end": "2022-06-24T12:46:16.671Z",
+    "duration": 10815
+  },
+  "tests": [
+    {
+      "title": "should add product to cart",
+      "fullTitle": "Verify Add to cart scenarios on Apptim app should add product to cart",
+      "file": "/Users/morellexf26/Documents/GitHub/apptim/apptim-demo-android-tests/nodejswd/test/specs/index.js",
+      "duration": 3766,
+      "currentRetry": 0,
+      "err": {}
+    }
+  ],
+  "pending": [],
+  "failures": [],
+  "passes": [
+    {
+      "title": "should add product to cart",
+      "fullTitle": "Verify Add to cart scenarios on Apptim app should add product to cart",
+      "file": "/Users/morellexf26/Documents/GitHub/apptim/apptim-demo-android-tests/nodejswd/test/specs/index.js",
+      "duration": 3766,
+      "currentRetry": 0,
+      "err": {}
+    }
+  ]
+}
+```
+
+<br>
+
+<div id="create-zipped-test-package">
+
+## 🗳 Create a Zipped Test Package File
+
+```
+npm run package
+```
+</div>
+
+<br>
+
 ## 📱 How to setup for Devicefarm
 
 <br>
 
-Go to AWS Devicefarm and create a project, use the name you want and go to the next step.
+1- Remove the `capabilities` parameter in test/base.js:
+```js
+driverSetup() {
+    return driver.init(capabilities);
+  }
+```
+
+2- Go to AWS Devicefarm and create a project, use the name you want and go to the next step.
 <img alt='Devicefarm Step 1' src="./screenshots/devicefarm/1.png" />
 
-Choose the APK file you want to upload and go to the next step.
+3- Choose the APK file you want to upload and go to the next step.
 <img alt='Devicefarm Step 2' src="./screenshots/devicefarm/2.png" />
 
-Select the Appium Node.js option.
+4- Select the Appium Node.js option.
 <img alt='Devicefarm Step 3' src="./screenshots/devicefarm/3.png" />
 
-Upload your zipped test package and go to the next step.
+5- Upload your <a href="#create-zipped-test-package">zipped test package</a> and go to the next step.
+
 <img alt='Devicefarm Step 4' src="./screenshots/devicefarm/4.png" />
 
 This is important, you need to setup the test spec yml file. Create a new one and use this template:
@@ -164,7 +242,7 @@ artifacts:
 
 <img alt='Devicefarm Step 5' src="./screenshots/devicefarm/5.png" />
 
-Select the device pool or create your own.
+6- Select the device pool or create your own.
 <img alt='Devicefarm Step 6' src="./screenshots/devicefarm/6.png" />
 
 And that's it! 😊✨
