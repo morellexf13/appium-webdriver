@@ -157,27 +157,31 @@ npm run package
 
 <br>
 
-1- Remove the `capabilities` parameter in test/base.js:
+1- Adapt the test/specs, page objects and apk to your needs.
+
+2- Remember to remove the `capabilities` parameter in `test/base.js`. Custom capabilities will only work for local tests.
 ```js
 driverSetup() {
     return driver.init(capabilities);
   }
 ```
 
-2- Go to AWS Devicefarm and create a project, use the name you want and go to the next step.
+3- Create a <a href="#create-zipped-test-package">zipped test package</a>. You will need this later 👀.
+
+4- Go to AWS Devicefarm and create a project, use the name you want and go to the next step.
 <img alt='Devicefarm Step 1' src="./screenshots/devicefarm/1.png" />
 
-3- Choose the APK file you want to upload and go to the next step.
+5- Choose the APK file you want to upload and go to the next step.
 <img alt='Devicefarm Step 2' src="./screenshots/devicefarm/2.png" />
 
-4- Select the Appium Node.js option.
+6- Select the Appium Node.js option.
 <img alt='Devicefarm Step 3' src="./screenshots/devicefarm/3.png" />
 
-5- Upload your <a href="#create-zipped-test-package">zipped test package</a> and go to the next step.
+7- Upload your <a href="#create-zipped-test-package">zipped test package</a> and go to the next step.
 
 <img alt='Devicefarm Step 4' src="./screenshots/devicefarm/4.png" />
 
-This is important, you need to setup the test spec yml file. Create a new one and use this template:
+❗️This is important, you need to setup the test spec yml file following the example bellow.
 
 ```yml
 version: 0.1
@@ -242,7 +246,8 @@ artifacts:
 
 <img alt='Devicefarm Step 5' src="./screenshots/devicefarm/5.png" />
 
-6- Select the device pool or create your own.
+8- Select a default device pool or create your own and go to the next step, start the session and wait 🤞.
 <img alt='Devicefarm Step 6' src="./screenshots/devicefarm/6.png" />
 
-And that's it! 😊✨
+9- Your Devicefarm test has ended successfully! 🌈
+<img alt='Devicefarm Step 7' src="./screenshots/devicefarm/7.png" />

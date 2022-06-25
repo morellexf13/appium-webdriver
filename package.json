@@ -1,6 +1,6 @@
 {
     "name": "appium-webdriver",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "description": "Appium Selenium Webdriver Starter Boilerplate for NodeJS with Mocha & AWS Devicefarm insights. Test your mobile apps with ease!",
     "scripts": {
         "test": "mocha test/specs/index.js --timeout 200000",
