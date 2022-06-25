@@ -119,7 +119,7 @@ npm run test-output-json
     {
       "title": "should add product to cart",
       "fullTitle": "Verify Add to cart scenarios on Apptim app should add product to cart",
-      "file": "/Users/morellexf26/Documents/GitHub/apptim/apptim-demo-android-tests/nodejswd/test/specs/index.js",
+      "file": "/Users/morellexf26/Documents/GitHub/appium-webdriver/nodejswd/test/specs/index.js",
       "duration": 3766,
       "currentRetry": 0,
       "err": {}
@@ -131,7 +131,7 @@ npm run test-output-json
     {
       "title": "should add product to cart",
       "fullTitle": "Verify Add to cart scenarios on Apptim app should add product to cart",
-      "file": "/Users/morellexf26/Documents/GitHub/apptim/apptim-demo-android-tests/nodejswd/test/specs/index.js",
+      "file": "/Users/morellexf26/Documents/GitHub/appium-webdriver/nodejswd/test/specs/index.js",
       "duration": 3766,
       "currentRetry": 0,
       "err": {}
