@@ -14,8 +14,8 @@
     <br />
     <br /
 
-[![Version](https://img.shields.io/github/v/tag/morellexf26/appium-webdriver?label=%20&style=for-the-badge)](https://github.com/morellexf26/appium-webdriver/releases)
-[![License](https://img.shields.io/badge/-MIT-f56565.svg?longCache=true&style=for-the-badge)](https://github.com/morellexf26/appium-webdriver/blob/main/LICENSE)
+[![Version](https://img.shields.io/github/v/tag/morellexf13/appium-webdriver?label=%20&style=for-the-badge)](https://github.com/morellexf13/appium-webdriver/releases)
+[![License](https://img.shields.io/badge/-MIT-f56565.svg?longCache=true&style=for-the-badge)](https://github.com/morellexf13/appium-webdriver/blob/main/LICENSE)
 [![Package Monthly Downloads](https://img.shields.io/npm/dm/appium-webdriver?label=%20&style=for-the-badge)](https://www.npmjs.com/package/appium-webdriver)
 [![Docs](https://img.shields.io/badge/-Docs-blue.svg?style=for-the-badge)](https://www.selenium.dev/documentation/overview/)
 
@@ -88,10 +88,13 @@ Install it locally and run in easy steps
 ## 📊 Run tests with allure reports
 
 Pre-requisites:
+
 ```
 brew install allure
 ```
+
 Generate & Open
+
 ```
 npm run test-output-allure
 ```
@@ -99,6 +102,7 @@ npm run test-output-allure
 <img alt='Allure Report' src="./screenshots/allure-report.png" />
 
 ## 👨🏼‍🎨 Run tests and output JSON
+
 ```
 npm run test-output-json
 ```
@@ -149,6 +153,7 @@ npm run test-output-json
 ```
 npm run package
 ```
+
 </div>
 
 <br>
@@ -160,6 +165,7 @@ npm run package
 1- Adapt the test/specs, page objects and apk to your needs.
 
 2- Remember to remove the `capabilities` parameter in `test/base.js`. Custom capabilities will only work for local tests.
+
 ```js
 driverSetup() {
     return driver.init(capabilities);
