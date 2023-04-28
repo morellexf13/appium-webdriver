@@ -2,6 +2,7 @@
   "name": "appium-webdriver",
   "version": "1.0.2",
   "description": "Appium Selenium Webdriver Starter Boilerplate for NodeJS with Mocha & AWS Devicefarm insights. Test your mobile apps with ease!",
+  "author": "morellexf13",
   "license": "MIT",
   "repository": {
     "type": "git",
