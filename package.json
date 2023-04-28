@@ -1,28 +1,35 @@
 {
-    "name": "appium-webdriver",
-    "version": "1.0.2",
-    "description": "Appium Selenium Webdriver Starter Boilerplate for NodeJS with Mocha & AWS Devicefarm insights. Test your mobile apps with ease!",
-    "scripts": {
-        "test": "mocha test/specs/index.js --timeout 200000",
-        "test-output-json": "mocha test/specs/index.js --timeout 200000 -R mocha-json-output-reporter",
-        "test-output-allure": "mocha test/specs/index.js --timeout 200000 --reporter mocha-allure-reporter && allure generate --clean && allure open",
-        "package": "npm install && npm-pack-zip"
-    },
-    "keywords": ["boilerplate", "nodejs", "selenium", "mocha", "appium", "devicefarm"],
-    "repository": {
-        "type": "git",
-        "url": "https://github.com/morellexf26/appium-webdriver.git"
-    },
-    "license": "MIT",
-    "dependencies": {
-        "chai": "^4.3.7",
-        "wd": "^1.14.0"
-    },
-    "devDependencies": {
-        "mocha": "^10.2.0",
-        "mocha-allure-reporter": "^1.4.0",
-        "mocha-json-output-reporter": "^2.0.1",
-        "npm-bundle": "^3.0.3",
-        "npm-pack-zip": "^1.3.0"
-    }
+  "name": "appium-webdriver",
+  "version": "1.0.2",
+  "description": "Appium Selenium Webdriver Starter Boilerplate for NodeJS with Mocha & AWS Devicefarm insights. Test your mobile apps with ease!",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/morellexf13/appium-webdriver.git"
+  },
+  "scripts": {
+    "test": "mocha test/specs/index.js --timeout 200000",
+    "test-output-json": "mocha test/specs/index.js --timeout 200000 -R mocha-json-output-reporter",
+    "test-output-allure": "mocha test/specs/index.js --timeout 200000 --reporter mocha-allure-reporter && allure generate --clean && allure open",
+    "package": "npm install && npm-pack-zip"
+  },
+  "keywords": [
+    "boilerplate",
+    "nodejs",
+    "selenium",
+    "mocha",
+    "appium",
+    "devicefarm"
+  ],
+  "dependencies": {
+    "chai": "^4.3.7",
+    "wd": "^1.14.0"
+  },
+  "devDependencies": {
+    "mocha": "^10.2.0",
+    "mocha-allure-reporter": "^1.4.0",
+    "mocha-json-output-reporter": "^2.0.1",
+    "npm-bundle": "^3.0.3",
+    "npm-pack-zip": "^1.3.0"
+  }
 }
