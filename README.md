@@ -12,8 +12,9 @@
     <br />
  Appium Selenium Webdriver Starter Boilerplate for NodeJS with Mocha & AWS Devicefarm insights. Test your mobile apps with ease!</em>
     <br />
-    <br /
+    <br />
 
+[![Build status](https://img.shields.io/github/actions/workflow/status/morellexf13/appium-webdriver/build.yml?branch=main&label=%20&logo=github&logoColor=white&style=for-the-badge)](https://github.com/morellexf13/appium-webdriver/actions/workflows/build.yml)
 [![Version](https://img.shields.io/github/v/tag/morellexf13/appium-webdriver?label=%20&style=for-the-badge)](https://github.com/morellexf13/appium-webdriver/releases)
 [![License](https://img.shields.io/badge/-MIT-f56565.svg?longCache=true&style=for-the-badge)](https://github.com/morellexf13/appium-webdriver/blob/main/LICENSE)
 [![Package Monthly Downloads](https://img.shields.io/npm/dm/appium-webdriver?label=%20&style=for-the-badge)](https://www.npmjs.com/package/appium-webdriver)
@@ -123,7 +124,7 @@ npm run test-output-json
     {
       "title": "should add product to cart",
       "fullTitle": "Verify Add to cart scenarios on Apptim app should add product to cart",
-      "file": "/Users/morellexf26/Documents/GitHub/appium-webdriver/nodejswd/test/specs/index.js",
+      "file": "/Users/morellexf13/Documents/GitHub/appium-webdriver/nodejswd/test/specs/index.js",
       "duration": 3766,
       "currentRetry": 0,
       "err": {}
@@ -135,7 +136,7 @@ npm run test-output-json
     {
       "title": "should add product to cart",
       "fullTitle": "Verify Add to cart scenarios on Apptim app should add product to cart",
-      "file": "/Users/morellexf26/Documents/GitHub/appium-webdriver/nodejswd/test/specs/index.js",
+      "file": "/Users/morellexf13/Documents/GitHub/appium-webdriver/nodejswd/test/specs/index.js",
       "duration": 3766,
       "currentRetry": 0,
       "err": {}
